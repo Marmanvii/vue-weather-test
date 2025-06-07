@@ -1,4 +1,4 @@
-This is a Vue.js weather test application. This project was done in 2 hours. It uses the OpenWeatherMap API to fetch weather data.
+This is a Vue.js weather test application developed within a 2-hour timeframe. It integrates with the OpenWeatherMap API.
 
 # How to Run
 First, make sure you have added the required .env file in the root directory, which must contain the OpenWeatherMap API key.
