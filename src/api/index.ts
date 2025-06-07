@@ -13,6 +13,10 @@ apiClient.interceptors.request.use((config) => {
       ...config.params,
       appid: apiKey,
     };
+  } else {
+    alert(
+      "Please provide an API key in the .env file as instructed in the README!",
+    );
   }
 
   return config;

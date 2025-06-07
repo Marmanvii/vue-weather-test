@@ -9,7 +9,7 @@ export const formatTime = (timestamp: number) => {
 };
 
 export const formatDateShort = (timestamp: number): string => {
-  const date = new Date(timestamp * 1000); // Add * 1000 here
+  const date = new Date(timestamp * 1000);
   return date.toLocaleDateString("en-US", {
     weekday: "long",
     month: "short",
