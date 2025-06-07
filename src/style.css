@@ -1,0 +1,22 @@
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --color-primary: #9ec6f3;
+    background-color: var(--color-primary);
+}
+
+#app {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.degrees {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
