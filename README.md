@@ -1,5 +1,13 @@
-# Vue 3 + TypeScript + Vite
+This is a Vue.js weather test application. This project was done in 2 hours. It uses the OpenWeatherMap API to fetch weather data.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# How to Run
+First, make sure you have added the required .env file in the root directory, which must contain the OpenWeatherMap API key.
+An example .env file is provided in the repository.
+The required .env file must contain the following variables:
+- `VITE_OPENWEATHER_API_KEY`
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Then just simply do the following:
+1. Install dependencies: `yarn install`
+2. Run the application: `yarn serve`
+
+The application should now be running on http://localhost:5173.

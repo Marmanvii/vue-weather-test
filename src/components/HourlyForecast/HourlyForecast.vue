@@ -10,6 +10,7 @@ defineProps<{
 
 <template>
     <Card>
+        <div class="title">Next hours</div>
         <div class="horizontal-container">
             <SingleHour
                 v-for="hour in hourlyData"

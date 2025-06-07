@@ -37,8 +37,8 @@ watch(
             );
 
             weatherData.value = weather.data.list;
-            //Given API restrictions, I'll only take the first 5 values (as they are given by a 3 hours interval)
-            hourlyForecast.value = weather.data.list.slice(1, 6);
+            //Given API restrictions, I'll only take the first 8 values (as they are given by a 3 hours interval)
+            hourlyForecast.value = weather.data.list.slice(1, 9);
             //Given API restrictions, i is multipled by 8 so it represents a day (as they are given by a 3 hours interval)
             dailyForecast.value = Array.from(
                 { length: 5 },

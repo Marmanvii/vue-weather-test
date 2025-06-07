@@ -16,15 +16,16 @@ defineProps<{
         />
         <div class="date-container">
             <div>{{ formatDateShort(dayData.dt) }}</div>
-            <div>
+            <div class="date">
                 {{
                     `${capitalize(dayData.weather[0].description)} throughout the day`
                 }}
             </div>
         </div>
         <div class="temperature-container">
-            <div>
-                {{ dayData.main.temp_min }}°C - {{ dayData.main.temp_max }}°C
+            <div class="degrees">
+                {{ Math.floor(dayData.main.temp_min) }}°
+                {{ Math.floor(dayData.main.temp_max) }}°
             </div>
         </div>
     </div>
@@ -37,6 +38,17 @@ defineProps<{
     align-items: center;
     justify-items: center;
     width: 100%;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
 }
 
 .temperature-container {

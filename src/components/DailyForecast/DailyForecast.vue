@@ -10,6 +10,7 @@ defineProps<{
 
 <template>
     <Card>
+        <div class="title">Next 5 Days</div>
         <div class="vertical-container">
             <SingleDay
                 :dayData="singleDayData"
