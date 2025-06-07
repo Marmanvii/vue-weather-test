@@ -7,3 +7,12 @@ export const formatTime = (timestamp: number) => {
   const minutes = date.getMinutes().toString().padStart(2, "0");
   return `${hours}:${minutes}`;
 };
+
+export const formatDateShort = (timestamp: number): string => {
+  const date = new Date(timestamp * 1000); // Add * 1000 here
+  return date.toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "short",
+    day: "numeric",
+  });
+};
